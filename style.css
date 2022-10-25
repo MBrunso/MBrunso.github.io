@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    color: #0000e6;
+    text-decoration: none;
+}
+
+a:hover:not(.actiu) {
+    color: #383838;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    font-size: 120%;
+    margin: -8px -8px 80px -8px;
+    z-index: 5;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: white;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+    list-style-type: none;  
+}
+
+nav li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+nav li a:hover:not(.actiu) {
+    border-radius: 3px;
+    background-color: white;
+}
+
+nav li:last-child {
+    float: right;
+}
+
+.actiu {
+    background-color: #0000e6;
+    border-radius: 0px 0px 3px 3px;
+    color: white;
+}
+
+
+footer {
+    font-weight: bold;
+    background-color: #0000e6;
+    padding: 8px;
+    margin: 50px -8px -10px -8px;
+}
+
+footer li {
+    display: inline;
+    white-space: nowrap;
+    color: white;
+    font-size: 80%;
+    padding: 4%;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: gray;
+}
+
+#info {
+    margin: 20px 40px 20px 80px;
+
+}
+
+#info ul {
+    list-style-type: none;
+    font-size: 22px;
+}
+
+#info li {
+    padding: 5px;
+}
+
+#info a {
+    color: black;
+    text-decoration: underline;
+}
+
+#info img {
+    vertical-align: sub;
+}
+
+
+#estudis {
+    margin: 5px 40px 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.principal-estudis {
+    flex-basis: 70%;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.principal-estudis table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.principal-estudis th {
+    background-color: #076da4;
+    color: white;
+}
+
+.principal-estudis td, .principal-estudis th {
+    border: 1px solid lightblue;
+    padding: 15px;
+}
+
+.principal-estudis tr:nth-child(odd) {
+    background-color: rgba(211, 211, 211, 0.936);
+}
+
+.principal-estudis tr:hover {
+    background-color: rgb(184, 228, 255);
+}
+
+.principal-presentacio {
+    margin: 5px 30px 60px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.presentacio {
+    margin-top: 40px;
+    margin-right: 40px;
+    flex-basis: 80%;
+    float: right;
+}
+
+.presentacio p{
+    font-size: 130%;
+}
+
+.foto {
+    position: relative;
+    float: left;
+    flex-basis: 15%;
+    margin: 20px;
+}
+
+.dropdownFoto {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 320px;
+    height: 452px;
+}
+
+.foto:hover .dropdownFoto {
+    display: block;
+}
+
+.costat {
+    flex-basis: 30%;
+    padding: 1px 10px;
+    margin-top: 15px; 
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.costat h3 {
+    border-top: 0.5px solid lightgray;
+    padding: 5px 4px;
+    border-bottom: 0.5px solid lightgray;
+}
+
+.costat p {
+    font-size: 16px;
+    padding: 0px 4px;
+}
+
+.comentari {
+    font-size: 14px;
+    color:gray
+}
+
+#aficions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#aficions img {
+    display: block;
+    margin: auto;
+}
+
+#motos {
+    flex-basis: 33%;
+    margin: 20px;
+    padding: 5px 10px 10px 25px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    background-color: lightsalmon;
+}
+
+#futbol {
+    flex-basis: 34%;
+    margin: 20px;
+    padding: 5px 10px 10px 25px;
+    border: 1px solid rgb(3, 162, 3);
+    border-radius: 20px;
+    background-color: lightgreen;
+}
+
+#viatjar {
+    flex-basis: 33%;
+    margin: 20px;
+    padding: 5px 10px 10px 25px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    background-color: lightyellow;
+}
+
+#experiencia ul {
+    list-style-type: none;
+}
+
+#experiencia li {
+    border-bottom: 1px solid lightgray;
+    
+}
+
+@media (max-width: 800px) {
+    #aficions, #estudis {
+      flex-direction: column;
+    }
+}
