@@ -301,14 +301,14 @@ footer a:hover {
     }
 
     nav {
-        margin-bottom: 200px;
+        margin-bottom: 420px;
     }
 
     nav ul {
         position: absolute;
     }
 
-    nav li:last-child {
-        float: left;
+    nav li, nav li:last-child {
+        float: none;
     }
 }
