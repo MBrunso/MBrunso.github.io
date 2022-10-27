@@ -3,11 +3,12 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h1 {
     font-size: 40px;
+    padding: 35px 40px 0px 80px;
 
 }
 
@@ -16,7 +17,11 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 a {
@@ -50,6 +55,7 @@ nav ul {
     padding: 0;
     overflow: hidden;  
     list-style-type: none;  
+    z-index: inherit;
 }
 
 nav li {
@@ -85,6 +91,7 @@ footer {
     background-color: #0000e6;
     padding: 8px;
     margin: 50px -8px -10px -8px;
+    bottom: 0;
 }
 
 footer li {
@@ -129,7 +136,7 @@ footer a:hover {
 
 
 #estudis {
-    margin: 5px 40px 20px 80px;
+    margin: 0px 40px 20px 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -139,7 +146,7 @@ footer a:hover {
 .principal-estudis {
     flex-basis: 70%;
     padding-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .principal-estudis table {
@@ -171,6 +178,8 @@ footer a:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+    z-index: -1;
+    
 }
 
 .presentacio {
@@ -178,11 +187,13 @@ footer a:hover {
     margin-right: 40px;
     flex-basis: 80%;
     float: right;
+    z-index: 1;
 }
 
 .presentacio p{
     font-size: 130%;
 }
+
 
 .foto {
     position: relative;
@@ -197,7 +208,7 @@ footer a:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     width: 320px;
     height: 452px;
 }
@@ -248,6 +259,7 @@ footer a:hover {
     border: 1px solid salmon;
     border-radius: 20px;
     background-color: lightsalmon;
+    box-shadow: 2px 2px 2px rgb(190, 190, 190);
 }
 
 #futbol {
@@ -257,6 +269,7 @@ footer a:hover {
     border: 1px solid rgb(3, 162, 3);
     border-radius: 20px;
     background-color: lightgreen;
+    box-shadow: 2px 2px 2px rgb(190, 190, 190);
 }
 
 #viatjar {
@@ -266,13 +279,18 @@ footer a:hover {
     border: 1px solid yellow;
     border-radius: 20px;
     background-color: lightyellow;
+    box-shadow: 2px 2px 2px rgb(190, 190, 190);
 }
 
-#experiencia ul {
+#experiencia {
+    margin: 5px 40px 80px 40px;
+}
+
+#experiencia > ul {
     list-style-type: none;
 }
 
-#experiencia li {
+#experiencia > ul > li {
     border-bottom: 1px solid lightgray;
     
 }
@@ -280,5 +298,17 @@ footer a:hover {
 @media (max-width: 800px) {
     #aficions, #estudis {
       flex-direction: column;
+    }
+
+    nav {
+        margin-bottom: 200px;
+    }
+
+    #nav ul {
+        position: absolute;
+    }
+
+    nav li:last-child {
+        float: left;
     }
 }
