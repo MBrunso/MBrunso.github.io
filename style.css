@@ -127,12 +127,11 @@ footer a:hover {
 
 #info ul {
     list-style-type: none;
-    font-size: 22px;
 }
 
 #info li {
     padding: 1%;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 #info a {
@@ -355,6 +354,10 @@ footer a:hover {
 
     .experiencia > ul > li {
         font-size: 16px; 
+    }
+
+    #info li {
+        font-size: 20px;
     }
 
  }
